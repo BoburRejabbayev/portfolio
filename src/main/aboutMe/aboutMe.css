@@ -1,0 +1,121 @@
+@import url(../../fonts/fonts.css);
+
+.aboutMeInfo {
+    display: block;
+    margin-top: 100px;
+    background: none;
+    position: relative;
+    height: 100%;
+    transition: .5s;
+}
+
+
+.circles {
+    position: absolute;
+    display: block;
+    margin: 0;
+    width: 575px;
+    height: 575px;
+    background-color: #00C4F0;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    /* opacity: 0; */
+    transition: .5s;
+}
+
+.bigCirlce {
+    top: 10px;
+    left: -30px;
+    background-color: #E4E4E4;
+    box-shadow: 0 0 10px rgba(228, 228, 228, 0.56),
+        0 0 20px rgba(228, 228, 228, 0.56),
+        0 0 30px rgba(228, 228, 228, 0.56);
+    width: 792px;
+    height: 792px;
+    transition: .5s all;
+    animation: bigCircle 25s infinite linear;
+    transform: translate(540px, 330px) scale(.3);
+}
+
+.aboutMeInfo:hover .bigCirlce {
+    transform: translate(0)scale(1)rotateX(180deg);
+}
+
+.middleCircle {
+    width: 486px;
+    height: 486px;
+    box-shadow: 0 0 10px rgba(0, 196, 240, 0.446),
+        0 0 20px rgba(0, 196, 240, 0.446),
+        0 0 30px rgba(0, 196, 240, 0.446);
+    bottom: -100px;
+    right: 100px;
+    transform: translate(0, -425px) scale(1.2);
+}
+
+.aboutMeInfo:hover .middleCircle {
+    transform: translate(0)scale(1)rotateX(-180deg);
+}
+
+.smallCircle {
+    top: -35px;
+    right: 200px;
+    width: 356px;
+    height: 356px;
+    background-color: #E2A200;
+    box-shadow: 0 0 10px rgba(226, 162, 0, 0.484),
+        0 0 20px rgba(226, 162, 0, 0.484),
+        0 0 30px rgba(226, 162, 0, 0.484);
+    transform: translate(-580px, 350px) scale(2);
+}
+
+.aboutMeInfo:hover .smallCircle {
+    transform: translate(0)scale(1.1)rotateX(180deg);
+}
+
+.aboutMeInfo:hover .circles {
+    opacity: 1;
+}
+
+
+
+
+
+.inside_eclipse {
+    margin: 0;
+    width: 80%;
+    height: 80%;
+    /* background: red; */
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    border-radius: 100%;
+}
+
+.myInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #E4E4E4;
+    padding: 63px;
+    margin: auto;
+    width: 496px;
+    /* height: 822px; */
+    background: #2C2C2C;
+    border-radius: 14px;
+    z-index: 1;
+    font-family: 'Pangolin';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    /* text-align: justify; */
+}
+
+.myInfo h1 {
+    top: -25px;
+    left: 63px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    position: absolute;
+}

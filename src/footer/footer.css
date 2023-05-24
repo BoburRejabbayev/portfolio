@@ -1,0 +1,22 @@
+footer {
+    /* height: 238px; */
+    /* margin-top: 100px; */
+    display: block;
+    width: 100%;
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+}
+
+.footerNav {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.footerNav a {
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+}
